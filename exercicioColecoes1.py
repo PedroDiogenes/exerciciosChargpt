@@ -1,3 +1,10 @@
+'''Lista de Compras
+   Crie uma lista com 5 itens de compras.
+   Adicione um item.
+   Remova um item.
+   Mostre a lista atualizada.
+   esse exercicio eu modifoquei um pouco'''
+
 import time
 
 lista_de_compras = []
@@ -16,8 +23,8 @@ def remover_item():
 def listar_itens():
     print('-' * 15)
     if lista_de_compras:
-        for produto in lista_de_compras:
-            print(produto)
+        for i,produto in enumerate(lista_de_compras):
+            print(i + 1, produto)
     else:
         print('Lista vazia!')
     print('-' * 15)
